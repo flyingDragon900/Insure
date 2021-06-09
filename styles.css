@@ -1,0 +1,127 @@
+:root {
+    /* colors */
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+.container {
+  width: 1440px;
+  margin: auto;
+}
+.btn {
+  text-transform: uppercase;
+  color: var(--DarkViolet);
+  background-color: white;
+  font-weight: 600;
+  padding: 12px 23px;
+  border: 2px solid var(--DarkViolet);
+  cursor: pointer;
+
+}
+.btn:hover{
+  color: var(--VeryLightGray);
+  background-color: var(--DarkViolet);
+}
+/* Header starts */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+}
+header #nav__links{
+  display: flex;
+}
+header #nav__links ul{
+    display: flex;
+    align-items: center;
+}
+header #nav__links ul li{
+  list-style: none;
+}
+header #nav__links li a{
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 12px;
+  text-transform: uppercase;
+  color: var(--GrayishBlue);
+
+}
+header #nav__links li a:hover{
+  color: var(--DarkViolet);
+}
+/* Humburger menu */
+.humburger{
+  display: none;
+}
+.hum__box{
+  border :2px solid var(--DarkViolet);
+  padding: 6px;
+}
+.bar1,.bar2,.bar3{
+  background-color: var(--DarkViolet);
+  margin-top: 3px;
+  width: 36px;
+  height: 3px; 
+}
+/* header ends */
+
+/* Media Quaries */
+/* dekstop width */
+@media (max-width: 1440px) and (min-width: 1080px){
+  .container{
+    width: 1080px;
+    margin: auto;
+  }
+}
+@media (max-width: 1080px) and (min-width: 776px){
+  .container{
+    width: 776px;
+    margin: auto;
+  }
+  
+}
+/* mobile widths */
+@media (max-width: 776px) and (min-width: 480px){
+  .container{
+    width: 480px;
+    margin: auto;
+  }
+  header #nav__links{
+    
+  }
+}
+@media (max-width: 480px) and (min-width: 375px){
+  .container{
+    width: 375px;
+    margin: auto;
+  }
+  header #nav__links{
+    display: none;
+  }
+  .humburger{
+    display: block;
+  }
+}
+@media (max-width: 375px) and (min-width: 0px){
+  .container{
+    width: 360px;
+    margin: auto;
+  }
+  header #nav__links{
+    display: none;
+  }
+  .humburger{
+    display: block;
+  }
+}

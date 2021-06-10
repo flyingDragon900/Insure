@@ -76,6 +76,9 @@ header #nav__links li a:hover {
   width: 36px;
   height: 3px;
 }
+#menu{
+  display: none;
+}
 /* header ends */
 
 /* hero starts */
@@ -108,7 +111,7 @@ header #nav__links li a:hover {
 .hero__left h1 {
   font-family: "DM Serif Display", serif;
   font-size: 72px;
-  margin-top: 78px;
+  margin-top: 52px;
 }
 .hero__left p {
   margin: 28px 0;
@@ -209,6 +212,13 @@ margin: 0 12px;
 }
 
 /* footer starts */
+footer{
+  background-color: var(--VeryLightGray);
+}
+hr{
+  width: 1440px ;
+  margin: auto;
+}
 .footer__flex{
   display: flex;
   justify-content: space-between;
@@ -313,7 +323,7 @@ margin: 18px 0;
   }
 }
 @media (max-width: 375px) and (min-width: 0px) {
-  .container {
+  .container,hr {
     width: 340px;
     margin: auto;
   }
@@ -379,5 +389,16 @@ margin: 18px 0;
     align-items: center;
     text-align: center;
   }
+
+  /* menu */
+/* #menu{
+  background-color: var(--VeryDarkViolet);
+}
+#menu ul li{
+list-style: none;
+}
+#menu ul li a{
+  text-decoration: none;
+} */
   
 }
